@@ -17,6 +17,8 @@ l2 = ->(args){body}
 l1.call(args)
 l1.(args)
 l2[args]
+
+l1<<l2 = ->(args){l1[l2[args]]}
 ```
 
 ## 4. %-literals for string:
